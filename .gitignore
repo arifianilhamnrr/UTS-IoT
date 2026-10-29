@@ -23,3 +23,11 @@ firmware/uts_iot/build/
 
 # Generated report HTML
 report/LAPORAN_UTS.html
+
+# Dokumen laporan & file pengujian (tidak diikutkan ke repositori)
+report/LAPORAN_UTS.*
+report/build_report.py
+report/evidence/*.png
+backend/tests/
+backend/pytest.ini
+mobile/test/
