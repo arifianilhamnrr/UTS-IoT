@@ -1,0 +1,21 @@
+[14:02:35] HEALTH     {'status': 'ok', 'server_time': '2026-10-29T07:02:35.757000+00:00'}
+[14:02:35] VALID      kirim payload valid (26.4 C, 61%)
+[14:02:35] VALID      HTTP 201 -> created
+[14:02:35] INVALID    kirim suhu 35 C (di luar 20-30)
+[14:02:35] INVALID    HTTP 422 -> {'status': 'rejected', 'message': 'Payload tidak valid, data tidak disimpan.', 'errors': [{'field': 'temperature', 'message': 'Value error, Suhu 35.0 °C di luar rentang wajar 20-30 °C'}]}
+[14:02:35] INVALID    kirim kelembapan 120% (di luar 0-100)
+[14:02:35] INVALID    HTTP 422 -> {'status': 'rejected', 'message': 'Payload tidak valid, data tidak disimpan.', 'errors': [{'field': 'humidity', 'message': 'Value error, Kelembapan 120.0% di luar rentang 0-100%'}]}
+[14:02:35] RETRY      simulasi 2x gagal jaringan lalu berhasil, reading_id tetap
+[14:02:35] RETRY      percobaan 1 gagal: ConnectError
+[14:02:35] RETRY      tunggu 1s lalu kirim ulang reading_id yang sama
+[14:02:36] RETRY      percobaan 2 gagal: ConnectError
+[14:02:36] RETRY      tunggu 2s lalu kirim ulang reading_id yang sama
+[14:02:38] RETRY      percobaan 3 sukses -> HTTP 201 (duplicate=False)
+[14:02:38] DEDUPE     kirim ulang payload yang sama (reading_id identik)
+[14:02:38] DEDUPE     HTTP 200 duplicate=True
+[14:02:38] DEDUPE     jumlah record dengan reading_id tsb = 1 (harus 1)
+[14:02:38] TREND      seed 5 data naik: 24.0 24.6 25.2 25.9 26.8
+[14:02:38] TREND      -> {'device_id': 'wokwi-esp32-01', 'trend': 'naik', 'window': 5, 'slope_per_reading': 0.69, 'delta': 2.8, 'temperatures': [24.0, 24.6, 25.2, 25.9, 26.8], 'explanation': 'Slope +0.690 °C/pembacaan (ambang ±0.1), selisih awal-akhir +2.80 °C.'}
+[14:02:38] TREND      seed 5 data turun: 28.5 27.9 27.0 26.2 25.4
+[14:02:38] TREND      -> {'device_id': 'wokwi-esp32-01', 'trend': 'turun', 'window': 5, 'slope_per_reading': -0.79, 'delta': -3.1, 'temperatures': [28.5, 27.9, 27.0, 26.2, 25.4], 'explanation': 'Slope -0.790 °C/pembacaan (ambang ±0.1), selisih awal-akhir -3.10 °C.'}
+[14:02:38] STATUS     sekarang: online (umur data 0.0s)

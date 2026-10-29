@@ -1,0 +1,25 @@
+# Kredensial perangkat
+secrets.h
+
+# Python
+backend/.venv/
+__pycache__/
+*.pyc
+backend/iot_monitor.db
+
+# Flutter
+mobile/.dart_tool/
+mobile/build/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+mobile/pubspec.lock
+
+# Wokwi / PlatformIO
+firmware/uts_iot/build/
+.pio/
+
+# OS
+.DS_Store
+
+# Generated report HTML
+report/LAPORAN_UTS.html

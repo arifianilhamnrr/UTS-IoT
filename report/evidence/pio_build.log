@@ -1,0 +1,134 @@
+Processing esp32doit-devkit-v1 (platform: espressif32; board: esp32doit-devkit-v1; framework: arduino)
+--------------------------------------------------------------------------------
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/espressif32/esp32doit-devkit-v1.html
+PLATFORM: Espressif 32 (7.1.3) > DOIT ESP32 DEVKIT V1
+HARDWARE: ESP32 240MHz, 320KB RAM, 4MB Flash
+DEBUG: Current (cmsis-dap) External (cmsis-dap, esp-bridge, esp-prog, iot-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa)
+PACKAGES: 
+ - framework-arduinoespressif32 @ 4.20017.260907+sha.dcc1105b 
+ - tool-esptoolpy @ 2.41100.260830 (4.11.0) 
+ - toolchain-xtensa-esp32 @ 8.4.0+2021r2-patch5
+Converting uts_iot.ino
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 38 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- Blynk @ 1.4.0
+|-- DHT sensor library @ 1.4.7
+|-- Adafruit Unified Sensor @ 1.1.15
+|-- ArduinoJson @ 6.21.6
+|-- HTTPClient @ 2.0.0
+|-- WiFi @ 2.0.0
+Building in release mode
+Compiling .pio/build/esp32doit-devkit-v1/src/uts_iot.ino.cpp.o
+Building .pio/build/esp32doit-devkit-v1/bootloader.bin
+Generating partitions .pio/build/esp32doit-devkit-v1/partitions.bin
+Compiling .pio/build/esp32doit-devkit-v1/lib965/BlynkNcpDriver/BlynkRpcCRC8.c.o
+Compiling .pio/build/esp32doit-devkit-v1/lib965/BlynkNcpDriver/BlynkRpcClientWeakImpl.c.o
+Compiling .pio/build/esp32doit-devkit-v1/lib965/BlynkNcpDriver/BlynkRpcInfra.c.o
+Compiling .pio/build/esp32doit-devkit-v1/lib965/BlynkNcpDriver/BlynkRpcInfraUart.c.o
+Compiling .pio/build/esp32doit-devkit-v1/lib965/BlynkNcpDriver/BlynkRpcUartFraming.c.o
+Compiling .pio/build/esp32doit-devkit-v1/lib965/BlynkNcpDriver/MessageBuffer.c.o
+Compiling .pio/build/esp32doit-devkit-v1/lib965/BlynkNcpDriver/MessageWriter.c.o
+esptool.py v4.11.0
+Creating esp32 image...
+Merged 1 ELF section
+Successfully created esp32 image.
+Compiling .pio/build/esp32doit-devkit-v1/lib6d3/WiFi/WiFi.cpp.o
+Archiving .pio/build/esp32doit-devkit-v1/lib965/libBlynkNcpDriver.a
+Compiling .pio/build/esp32doit-devkit-v1/lib6d3/WiFi/WiFiAP.cpp.o
+Compiling .pio/build/esp32doit-devkit-v1/lib6d3/WiFi/WiFiClient.cpp.o
+Indexing .pio/build/esp32doit-devkit-v1/lib965/libBlynkNcpDriver.a
+Compiling .pio/build/esp32doit-devkit-v1/lib6d3/WiFi/WiFiGeneric.cpp.o
+Compiling .pio/build/esp32doit-devkit-v1/lib6d3/WiFi/WiFiMulti.cpp.o
+Compiling .pio/build/esp32doit-devkit-v1/lib6d3/WiFi/WiFiSTA.cpp.o
+Compiling .pio/build/esp32doit-devkit-v1/lib6d3/WiFi/WiFiScan.cpp.o
+Compiling .pio/build/esp32doit-devkit-v1/lib6d3/WiFi/WiFiServer.cpp.o
+Compiling .pio/build/esp32doit-devkit-v1/lib6d3/WiFi/WiFiUdp.cpp.o
+Compiling .pio/build/esp32doit-devkit-v1/libdbe/Blynk/utility/BlynkDebug.cpp.o
+Compiling .pio/build/esp32doit-devkit-v1/libdbe/Blynk/utility/BlynkHandlers.cpp.o
+Compiling .pio/build/esp32doit-devkit-v1/libdbe/Blynk/utility/BlynkHelpers.cpp.o
+Compiling .pio/build/esp32doit-devkit-v1/libdbe/Blynk/utility/BlynkTimeUtils.cpp.o
+Compiling .pio/build/esp32doit-devkit-v1/libdbe/Blynk/utility/BlynkTimer.cpp.o
+Compiling .pio/build/esp32doit-devkit-v1/libdbe/Blynk/utility/utility.cpp.o
+Compiling .pio/build/esp32doit-devkit-v1/libc5b/Adafruit Unified Sensor/Adafruit_Sensor.cpp.o
+Compiling .pio/build/esp32doit-devkit-v1/lib62d/DHT sensor library/DHT.cpp.o
+Compiling .pio/build/esp32doit-devkit-v1/lib62d/DHT sensor library/DHT_U.cpp.o
+Compiling .pio/build/esp32doit-devkit-v1/lib21f/WiFiClientSecure/WiFiClientSecure.cpp.o
+Archiving .pio/build/esp32doit-devkit-v1/libdbe/libBlynk.a
+Archiving .pio/build/esp32doit-devkit-v1/libc5b/libAdafruit Unified Sensor.a
+Compiling .pio/build/esp32doit-devkit-v1/lib21f/WiFiClientSecure/esp_crt_bundle.c.o
+Indexing .pio/build/esp32doit-devkit-v1/libdbe/libBlynk.a
+Indexing .pio/build/esp32doit-devkit-v1/libc5b/libAdafruit Unified Sensor.a
+Compiling .pio/build/esp32doit-devkit-v1/lib21f/WiFiClientSecure/ssl_client.cpp.o
+Compiling .pio/build/esp32doit-devkit-v1/lib3df/HTTPClient/HTTPClient.cpp.o
+Archiving .pio/build/esp32doit-devkit-v1/lib6d3/libWiFi.a
+Indexing .pio/build/esp32doit-devkit-v1/lib6d3/libWiFi.a
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/Esp.cpp.o
+Archiving .pio/build/esp32doit-devkit-v1/lib62d/libDHT sensor library.a
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/FirmwareMSC.cpp.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/FunctionalInterrupt.cpp.o
+Indexing .pio/build/esp32doit-devkit-v1/lib62d/libDHT sensor library.a
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/HWCDC.cpp.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/HardwareSerial.cpp.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/IPAddress.cpp.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/IPv6Address.cpp.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/MD5Builder.cpp.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/Print.cpp.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/Stream.cpp.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/StreamString.cpp.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/Tone.cpp.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/USB.cpp.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/USBCDC.cpp.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/USBMSC.cpp.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/WMath.cpp.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/WString.cpp.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/base64.cpp.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/cbuf.cpp.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/esp32-hal-adc.c.o
+Archiving .pio/build/esp32doit-devkit-v1/lib21f/libWiFiClientSecure.a
+Indexing .pio/build/esp32doit-devkit-v1/lib21f/libWiFiClientSecure.a
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/esp32-hal-bt.c.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/esp32-hal-cpu.c.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/esp32-hal-dac.c.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/esp32-hal-gpio.c.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/esp32-hal-i2c-slave.c.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/esp32-hal-i2c.c.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/esp32-hal-ledc.c.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/esp32-hal-matrix.c.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/esp32-hal-misc.c.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/esp32-hal-psram.c.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/esp32-hal-rgb-led.c.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/esp32-hal-rmt.c.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/esp32-hal-sigmadelta.c.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/esp32-hal-spi.c.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/esp32-hal-time.c.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/esp32-hal-timer.c.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/esp32-hal-tinyusb.c.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/esp32-hal-touch.c.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/esp32-hal-uart.c.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/firmware_msc_fat.c.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/libb64/cdecode.c.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/libb64/cencode.c.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/main.cpp.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/stdlib_noniso.c.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/wiring_pulse.c.o
+Compiling .pio/build/esp32doit-devkit-v1/FrameworkArduino/wiring_shift.c.o
+Archiving .pio/build/esp32doit-devkit-v1/lib3df/libHTTPClient.a
+Indexing .pio/build/esp32doit-devkit-v1/lib3df/libHTTPClient.a
+Archiving .pio/build/esp32doit-devkit-v1/libFrameworkArduino.a
+Indexing .pio/build/esp32doit-devkit-v1/libFrameworkArduino.a
+Linking .pio/build/esp32doit-devkit-v1/firmware.elf
+Retrieving maximum program size .pio/build/esp32doit-devkit-v1/firmware.elf
+Checking size .pio/build/esp32doit-devkit-v1/firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [=         ]  14.4% (used 47260 bytes from 327680 bytes)
+Flash: [===       ]  29.9% (used 941241 bytes from 3145728 bytes)
+Building .pio/build/esp32doit-devkit-v1/firmware.bin
+esptool.py v4.11.0
+Creating esp32 image...
+Merged 27 ELF sections
+Successfully created esp32 image.
+========================= [SUCCESS] Took 34.53 seconds =========================

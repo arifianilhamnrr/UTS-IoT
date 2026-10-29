@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "author": "UTS Komputasi Mobile & IoT",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": -70.6,
+      "left": 175.7,
+      "attrs": { "temperature": "26.5", "humidity": "61" }
+    },
+    { "type": "wokwi-resistor", "id": "r1", "top": 0, "left": 280, "attrs": { "value": "10000" } }
+  ],
+  "connections": [
+    [ "esp:15", "dht1:SDA", "green", [ "v0" ] ],
+    [ "esp:3V3", "dht1:VCC", "red", [ "v0" ] ],
+    [ "esp:GND.1", "dht1:GND", "black", [ "v0" ] ],
+    [ "esp:3V3", "r1:1", "red", [ "h0" ] ],
+    [ "r1:2", "dht1:SDA", "green", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}
